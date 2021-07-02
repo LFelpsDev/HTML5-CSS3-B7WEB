@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    margin: 0;
+  }
+
+  .teste {
+    width: 600px;
+    height: 300px;
+    background: red;
+  }
+
+  @media only screen and (min-width: 200px) and (max-width: 600px) {
+    .teste {
+      width: 300px;
+    }
+  }
+
+
+/* 
+  @media only screen and  (orientation: landscape){ para quando celular estiver deitado
+    .teste {
+      width: 300px;
+    }
+  } 
+*/
+
+</style>
+
+<body>
+  <div class="teste"></div>
+</body>
+
+</html>
