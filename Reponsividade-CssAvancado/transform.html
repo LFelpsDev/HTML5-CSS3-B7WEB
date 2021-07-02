@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    body {
+      background: gray;
+      margin: 0;
+    }
+    div {
+      background-color: red;
+      width: 200px;
+      height: 200px;
+      /* transform: rotate(30deg); */
+      /* animation: rodar 10s infinite linear; */
+      /* transform: scale(3, 1); */
+      transform: skew(20, 20);
+    }
+    .container {
+      background: rgb(9, 9, 238);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-width: 400px;
+      margin: auto;
+      align-content: center;
+      gap: 14px;
+    }
+
+    @keyframes rodar {
+      0% {
+        transform: rotate(-20deg);
+        background: red;
+      }
+
+      50% {
+        transform: rotate(-100deg);
+        background: orange;
+      }
+
+      100% {
+        transform: rotate(200deg);
+        background: yellow;
+      }
+      
+    }
+  </style>
+</head>
+<body>
+  <section class="container">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  </section>
+
+</body>
+</html>
