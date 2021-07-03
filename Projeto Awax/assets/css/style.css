@@ -6,8 +6,10 @@
   box-sizing: border-box;
 }
 
-body {
+body, html {
   font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  /* scroll-behavior: smooth; */
 }
 
 header {
@@ -118,8 +120,8 @@ header {
   margin-top: 20px;
 }
 
-.banner a {
-  display: block;
+.button {
+  display: inline-block;
   background-color: #B28756;
   color: white;
   text-transform: uppercase;
@@ -129,6 +131,19 @@ header {
   font-weight: 600;
   margin-top: 20px;
   border-radius: 30px;
+}
+
+.banner a:hover {
+  animation: rodar 8s linear infinite;
+}
+
+@keyframes rodar {
+  0% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(200deg);
+  }
 }
 
 .banner .sliders-pointers {
@@ -154,3 +169,79 @@ header {
   background-color: #B28756;
 }
 /*  FIM BANNER */
+
+/* Section */
+
+.default {
+  padding: 50px 0;
+}
+
+.default .section-title,
+.default .section-desc{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.default .section-title {
+  font-size: 20px;
+}
+
+.default .section-desc {
+  font-size: 12px;
+  color: #CCC;
+  margin-top: 13px;
+  margin-bottom: 40px;
+}
+.default .section-body {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.default.light {
+  background-color: #F7F7F7;
+}
+
+.default.light .section-title,
+.default.light .section-body{
+  color: black;
+}
+
+.default.dark {
+  background: black;
+}
+
+.default.dark .section-title,
+.default.dark .section-body{
+  color: white;
+}
+
+
+
+
+
+
+/* Areas Especificas */
+
+.section-aboutus {
+  display: flex;
+}
+
+.section-aboutus--left {
+  flex: 1;
+  text-indent: 15px;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.section-aboutus--right {
+  width: 520px;
+  text-align: center;
+}
+
+.section-aboutus--right img {
+  width: 480px;
+  box-shadow: 0px 7px 10px #333;
+  height: 300px;
+}
+
+
