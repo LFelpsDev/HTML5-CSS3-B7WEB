@@ -225,13 +225,16 @@ header {
 /* INICIO ABOUT US */
 .section-aboutus {
   display: flex;
+  flex-wrap: wrap;
 }
+
 
 .section-aboutus--left {
   flex: 1;
   text-indent: 15px;
   font-size: 14px;
   line-height: 28px;
+  padding: 20px;
 }
 
 .section-aboutus--right {
@@ -376,6 +379,289 @@ header {
 .section-projects--photoarea:hover .section-projects--photoinfo {
   display: flex;
 }
-/*  INCIO EFEITO DE INFORMAÇÃO EM CIMA AO PASSAR O MOUSE EM CIMA DA IMAGEM */
+/*  FIM EFEITO DE INFORMAÇÃO EM CIMA AO PASSAR O MOUSE EM CIMA DA IMAGEM */
 /* FIM FOTOS PROJETO */
 
+
+
+/* INICIO SECTIO TEAM */
+.dark.bg-team {
+  background-image: url('../../media/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+}
+
+.section-team-area {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 50px 0;
+}
+
+.section-team {
+  overflow: hidden;
+  max-width: 880px;
+  margin: auto;
+}
+
+.section-team .sliders {
+  height: 100%;
+  width: 1000vw;
+}
+
+.section-team .slide {
+  width: 280px;
+  height: 100%;
+  max-height: 500px;
+  display: inline-block;
+  background: white;
+  margin-right: 15px;
+}
+
+.section-team .slidearea {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  color: #ffff;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-team .sliders-pointers {
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.section-team .pointer {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 2px solid #B28756;
+  margin: 0 5px 0 5px;
+  cursor: pointer;
+}
+
+.section-team .pointer.active {
+  background-color: #B28756;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.section--team-avatar {
+  width: 150px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.names-team {
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.names-team h4 {
+  font-weight: 600;
+  text-align: center;
+}
+
+.names-team p {
+  font-size: 12px;
+  color: #999;
+}
+
+.icons {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.icons img {
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #999;
+  cursor: pointer;
+}
+
+.icons img:hover {
+  background: #B28756;
+}
+
+
+/* FIM SECTIO TEAM */
+
+/* INCIO HAPPY CLIENTS */
+.happy-clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 880px;
+  margin: auto;
+
+}
+
+.happy-clients h3 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.happy-clients p {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 16px;
+}
+
+.happy-comments p {
+  color: black;
+  margin-top: 20px;
+}
+
+.happy-clients .slide {
+  width: 280px;
+  height: 100%;
+  max-height: 500px;
+  display: inline-block;
+  background: white;
+  margin-right: 15px;
+}
+
+.happy-clients .slidearea {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  color: #ffff;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.happy-clients .sliders-pointers {
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.happy-clients .pointer {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 2px solid #B28756;
+  margin: 0 5px 0 5px;
+  cursor: pointer;
+}
+
+.happy-clients .pointer.active {
+  background-color: #B28756;
+}
+
+.empresas-logo--tipo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  height: 100px;
+  gap: 60px;
+  overflow: auto;
+}
+
+.empresas-logo--tipo img {
+  margin-left: 0px;
+}
+
+/* FIM HAPPY CLIENTS */
+
+/* incio tabela de preço */
+
+
+.card-preco--container {
+  max-width: 1140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card-preco {
+  width: 250px;
+  min-height: 280px;
+  background-color: white;
+  margin-left: 10px;
+}
+
+.card-preco h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #999;
+  margin: 17px 0;
+
+}
+
+.card-moth {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.risc {
+  width: 8px;
+  height: 2px;
+  background-color: black;
+  margin: 10px 0;
+}
+
+.button-preco {
+  display: inline-block;
+  background-color: #333;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 10px 30px;
+  font-weight: 600;
+  margin-top: 20px;
+  border-radius: 30px;
+  margin-bottom: 25px;
+}
+
+.button-preco:hover {
+  background-color: #B28756;
+}
+
+/* fim tabela de preço */
+
+
+@media (max-width: 580px){
+  .section-services {
+    flex-direction: column;
+  }
+  .card-preco {
+    margin-bottom: 16px;
+  }
+  .card-container {
+    padding: 40px;
+  }
+  .section-aboutus--left a {
+    padding: auto;
+  }
+  .section-team-area {
+    padding: 30px;
+  }
+
+}
