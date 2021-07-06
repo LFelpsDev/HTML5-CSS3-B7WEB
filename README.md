@@ -18,3 +18,6 @@
 - Função Calc
 - ViewPort
 
+## Projeto Awax Desenvolvido Totalmente em HTML E CSS com FlexBox 🚀 
+
+![2021-07-06 15-05-30](https://user-images.githubusercontent.com/78617974/124647343-34e21c80-de6c-11eb-97e7-61a0ef668670.gif)
