@@ -6,8 +6,9 @@
   box-sizing: border-box;
 }
 
-body, html {
-  font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+body,
+html {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   overflow-x: hidden;
   /* scroll-behavior: smooth; */
 }
@@ -16,7 +17,6 @@ header {
   height: 100px;
   background-color: black;
   color: #fff;
-
 }
 
 .header {
@@ -43,6 +43,9 @@ header {
   justify-content: flex-end;
 }
 
+.menu-opener {
+  display: none;
+}
 .menu ul,
 .menu li {
   list-style: none;
@@ -66,19 +69,18 @@ header {
 
 .menu li a:hover,
 .menu .active a {
-  border-bottom: 5px solid #B28756;
-  color: #CCC;
+  border-bottom: 5px solid #b28756;
+  color: #ccc;
 }
 
 /*  FIM HEADER */
-
 
 /*  INICIO BANNER */
 
 .banner {
   height: calc(100vh - 100px);
   background-color: #333;
-  background-image: url('../../media/bg.jpg');
+  background-image: url("../../media/bg.jpg");
   background-size: cover;
   background-position: bottom; /* Preferindo a parte de baixo */
   overflow: hidden;
@@ -112,7 +114,7 @@ header {
 }
 
 .banner h1 span {
-  color: #B28756;
+  color: #b28756;
 }
 
 .banner h2 {
@@ -122,7 +124,7 @@ header {
 
 .button {
   display: inline-block;
-  background-color: #B28756;
+  background-color: #b28756;
   color: white;
   text-transform: uppercase;
   font-size: 12px;
@@ -160,13 +162,13 @@ header {
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  border: 2px solid #B28756;
+  border: 2px solid #b28756;
   margin: 0 5px 0 5px;
   cursor: pointer;
 }
 
 .banner .pointer.active {
-  background-color: #B28756;
+  background-color: #b28756;
 }
 /*  FIM BANNER */
 
@@ -177,7 +179,7 @@ header {
 }
 
 .default .section-title,
-.default .section-desc{
+.default .section-desc {
   text-align: center;
   text-transform: uppercase;
   font-weight: 600;
@@ -188,7 +190,7 @@ header {
 
 .default .section-desc {
   font-size: 12px;
-  color: #CCC;
+  color: #ccc;
   margin-top: 13px;
   margin-bottom: 40px;
 }
@@ -198,11 +200,11 @@ header {
 }
 
 .default.light {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
 }
 
 .default.light .section-title,
-.default.light .section-body{
+.default.light .section-body {
   color: black;
 }
 
@@ -211,14 +213,9 @@ header {
 }
 
 .default.dark .section-title,
-.default.dark .section-body{
+.default.dark .section-body {
   color: white;
 }
-
-
-
-
-
 
 /* Areas Especificas */
 
@@ -228,10 +225,8 @@ header {
   flex-wrap: wrap;
 }
 
-
 .section-aboutus--left {
   flex: 1;
-  text-indent: 15px;
   font-size: 14px;
   line-height: 28px;
   padding: 20px;
@@ -291,11 +286,10 @@ header {
 
 .section-projects--filters {
   border: 1px solid #999;
-  background:#eee;
+  background: #eee;
   border-radius: 30px;
   display: inline-block;
   padding: 0px 20px;
-
 }
 
 .section-projects--filters ul,
@@ -312,12 +306,11 @@ header {
   border-right: 1px solid #ccc;
   color: #555;
   border-bottom: 3px solid #eee;
-
 }
 
 .section-projects--filters li:hover,
 .section-projects--filters .active {
-  border-bottom: 3px solid #B28756;
+  border-bottom: 3px solid #b28756;
 }
 
 .section-projects--filters li:last-child {
@@ -337,7 +330,7 @@ header {
   justify-content: center;
 }
 
-.section-projects--photo  {
+.section-projects--photo {
   width: 280px;
 }
 
@@ -352,7 +345,6 @@ header {
   height: inherit;
 }
 
-
 /*  INCIO EFEITO DE INFORMAÇÃO EM CIMA AO PASSAR O MOUSE EM CIMA DA IMAGEM */
 .section-projects--photoinfo {
   position: absolute;
@@ -366,14 +358,12 @@ header {
   text-indent: 10px;
   color: white;
   display: none;
-  cursor:pointer;
+  cursor: pointer;
 }
-
 
 .section-projects--photoinfo h5 {
   font-size: 17px;
   font-weight: 600;
-
 }
 
 .section-projects--photoarea:hover .section-projects--photoinfo {
@@ -382,11 +372,9 @@ header {
 /*  FIM EFEITO DE INFORMAÇÃO EM CIMA AO PASSAR O MOUSE EM CIMA DA IMAGEM */
 /* FIM FOTOS PROJETO */
 
-
-
 /* INICIO SECTIO TEAM */
 .dark.bg-team {
-  background-image: url('../../media/bg.jpg');
+  background-image: url("../../media/bg.jpg");
   background-size: cover;
   background-position: center;
   padding: 0;
@@ -438,13 +426,13 @@ header {
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  border: 2px solid #B28756;
+  border: 2px solid #b28756;
   margin: 0 5px 0 5px;
   cursor: pointer;
 }
 
 .section-team .pointer.active {
-  background-color: #B28756;
+  background-color: #b28756;
 }
 
 .card-container {
@@ -454,7 +442,6 @@ header {
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  
 }
 
 .section--team-avatar {
@@ -497,9 +484,8 @@ header {
 }
 
 .icons img:hover {
-  background: #B28756;
+  background: #b28756;
 }
-
 
 /* FIM SECTIO TEAM */
 
@@ -511,7 +497,6 @@ header {
   text-align: center;
   max-width: 880px;
   margin: auto;
-
 }
 
 .happy-clients h3 {
@@ -560,13 +545,13 @@ header {
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  border: 2px solid #B28756;
+  border: 2px solid #b28756;
   margin: 0 5px 0 5px;
   cursor: pointer;
 }
 
 .happy-clients .pointer.active {
-  background-color: #B28756;
+  background-color: #b28756;
 }
 
 .empresas-logo--tipo {
@@ -587,7 +572,6 @@ header {
 
 /* incio tabela de preço */
 
-
 .card-preco--container {
   max-width: 1140px;
   display: flex;
@@ -595,7 +579,7 @@ header {
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .card-preco {
@@ -603,6 +587,7 @@ header {
   min-height: 280px;
   background-color: white;
   margin-left: 10px;
+  margin-bottom: 15px;
 }
 
 .card-preco h4 {
@@ -610,7 +595,6 @@ header {
   font-weight: 600;
   color: #999;
   margin: 17px 0;
-
 }
 
 .card-moth {
@@ -641,33 +625,12 @@ header {
 }
 
 .button-preco:hover {
-  background-color: #B28756;
+  background-color: #b28756;
 }
 
 /* fim tabela de preço */
 
-
-@media (max-width: 580px){
-  .section-services {
-    flex-direction: column;
-  }
-  .card-preco {
-    margin-bottom: 16px;
-  }
-  .card-container {
-    padding: 40px;
-  }
-  .section-aboutus--left a {
-    padding: auto;
-  }
-  .section-team-area {
-    padding: 30px;
-  }
-
-}
-
 /* books */
-
 
 .section-book--left {
   flex: 1;
@@ -676,7 +639,7 @@ header {
   padding-bottom: 10px;
 }
 
-.section-book--left img{
+.section-book--left img {
   margin-left: 35px;
 }
 
@@ -719,16 +682,14 @@ header {
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  border: 2px solid #B28756;
+  border: 2px solid #b28756;
   margin: 0 5px 0 5px;
   cursor: pointer;
 }
 
 .book .pointer.active {
-  background-color: #B28756;
+  background-color: #b28756;
 }
-
-
 
 .container-some-facts {
   display: flex;
@@ -739,10 +700,12 @@ header {
 
 .container-some-facts h2 {
   font-size: 38px;
-  color: #B28756;
+  color: #b28756;
 }
 
-.container-some-facts h2, h4, p {
+.container-some-facts h2,
+h4,
+p {
   margin-top: 15px;
 }
 
@@ -751,6 +714,145 @@ header {
   padding: 25px;
 }
 
+/* MAPA */
+
+.section-map {
+  background-image: url("../images/mapa.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.section-map--area {
+  width: 100vw;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.section-map--info {
+  width: 50%;
+  padding: 30px;
+  background-color: #fff;
+  color: #000;
+}
+
+.section-map--info-item {
+  display: flex;
+  align-items: center;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.section-map--info-item-img {
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  padding: 5px;
+  background: #999;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  margin-right: 15px;
+}
+
+.section-map--info-item-img img {
+  width: 20px;
+  height: auto;
+}
 
 
 
+
+
+
+
+@media (min-width: 450px) and (max-width: 800px) {
+  .logo {
+    margin-left: 20px;
+  }
+  .menu-opener {
+    width: 40px;
+    display: block;
+    margin-right: 30px;
+  }
+  nav {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 80%;
+    height: calc(100vh - 100px);
+    top: 100px;
+    right: 0;
+  }
+  .menu ul {
+    flex-direction: column;
+  }
+  .menu li a {
+    font-weight: bold;
+    height: 80px;
+    font-size: 27px;
+    margin-left: 30px;
+    border: 0;
+  }
+  .menu li.active a {
+    border: 0;
+    color: #b28756;
+  }
+
+  .section-aboutus {
+    flex-direction: column;
+  }
+
+  .section-aboutus--left {
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .section-aboutus--right {
+    width: auto;
+  }
+
+  .section-services {
+    flex-wrap: wrap;
+  }
+
+  .section-service {
+    min-width: 50%;
+    margin-bottom: 30px;
+  }
+  .section-service:first-child {
+    border-left: 0;
+  }
+
+  .section-team {
+    max-width: 580px;
+  }
+
+  .container-some-facts {
+    flex-direction: column;
+    max-width: 70%;
+    margin: auto;
+  }
+  
+  .section-map {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .section-map--info {
+    width: auto;
+  }
+  
+  .section-map--area {
+    width: auto;
+  }
+
+  .section-map--info-item {
+    margin-bottom: 20px;
+  }
+  .section-map--info-item:last-child {
+    margin-bottom: 0;
+  }
+
+}
